@@ -1051,15 +1051,19 @@ input[type='text']::placeholder, input[type='email']::placeholder,::placeholder 
 }
 
 .boldme{
-    font-weight: bolder;
+    font-weight: bold;
     font-size: 30px;
     font-family: 'Plus Jakarta Sans', serif;
     align-content: left;
-    color: white;
+    color: var(--cinder);
 }
 
 .ulcont{
     margin-top: 20px;
+    font-family: 'Plus Jakarta Sans', serif;
+    
+
+
 }
 
 /* Add modern styling to certifications */
