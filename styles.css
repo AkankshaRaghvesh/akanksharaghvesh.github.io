@@ -1055,6 +1055,7 @@ input[type='text']::placeholder, input[type='email']::placeholder,::placeholder 
     font-size: 30px;
     font-family: 'Plus Jakarta Sans', serif;
     align-content: left;
+    color: white;
 }
 
 .ulcont{
