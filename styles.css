@@ -1381,7 +1381,13 @@ input[type='text']::placeholder, input[type='email']::placeholder,::placeholder 
     width: 90%;
     height: 90%;
     object-fit: contain;
+}
+
+/* Adding specific styling for the CompTIA logo to ensure visibility */
+[data-theme="dark"] .cert-logo img[alt="CompTIA Logo"] {
     background-color: #FFFFFF;
+    padding: 8px;
+    border-radius: 4px;
 }
 
 .verified-badge {
