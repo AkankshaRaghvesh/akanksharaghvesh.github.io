@@ -27,21 +27,16 @@
         </div>
         <nav class="nav">
             <ul class="nav-links">
-                <li class="services active" data-aos-delay="200" data-aos="fade-down"><a href="#services">Skills</a></li>
-                <li class="portfolios" data-aos-delay="250" data-aos="fade-down"><a href="#portfolios">Projects</a></li>
+                <li class="education active" data-aos-delay="200" data-aos="fade-down"><a href="#education">Education</a></li>
+                <li class="services" data-aos-delay="250" data-aos="fade-down"><a href="#services">Skills</a></li>
                 <li class="experience" data-aos-delay="300" data-aos="fade-down"><a href="#experience">Experience</a></li>
-                <li class="blog" data-aos-delay="350" data-aos="fade-down"><a href="#blog">Volunteering</a></li>
-                <!-- <li class="testimonials mobile-link" data-aos-delay="350" data-aos="fade-down"><a href="#testimonials">Testimonials</a></li> -->
-                <li class="education mobile-link" data-aos-delay="350" data-aos="fade-down"><a href="#education">Education</a></li>
-                <li class="certifications mobile-link" data-aos-delay="350" data-aos="fade-down"><a href="#certifications">Certifications</a></li>
-                <li class="contact mobile-link" data-aos-delay="350" data-aos="fade-down"><a href="#contact">Contact</a></li>
-                <!-- <li class="mobile-link" data-aos-delay="350" data-aos="fade-down"><a href="assets/resume.pdf" >Resume</a></li> -->
-                <li data-aos-delay="400" data-aos="fade-down" class="more-links">
+                <li class="certifications" data-aos-delay="350" data-aos="fade-down"><a href="#certifications">Certifications</a></li>
+                <li class="portfolios" data-aos-delay="400" data-aos="fade-down"><a href="#portfolios">Projects</a></li>
+                <li class="blog" data-aos-delay="450" data-aos="fade-down"><a href="#blog">Volunteering</a></li>
+                <li class="contact mobile-link" data-aos-delay="500" data-aos="fade-down"><a href="#contact">Contact</a></li>
+                <li data-aos-delay="550" data-aos="fade-down" class="more-links">
                     <svg viewBox="0 0 12 3"><use xlink:href="assets/img/sprite.svg#more-links"></use></svg>
                     <ul class="menu-list">
-                        <!-- <li class="testimonials"><a href="#testimonials">Testimonials</a></li> -->
-                        <li class="education"><a href="#education">Education</a></li>
-                        <li class="certifications"><a href="#certifications">Certifications</a></li>
                         <li class="contact"><a href="#contact">Contact</a></li>
                     </ul>
                 </li>
@@ -106,46 +101,280 @@ cybersecurity posture.</p>
             </div>
         </div>
     </section>
-    <section class="service-section" id="services">
+    <section class="education-section" id="education">
         <div class="container">
-            <div class="section-name center" data-aos="fade-up">
-                <div class="content">
-                    <p class="above-title">Skills</p>
-                    <h4 class="title">Specialized in</h4>
-                </div>
+            <div class="section-name" data-aos="fade-up">
+                <p class="above-title">Learning Path</p>
+                <h4 class="title">Education</h4>
             </div>
-            <div class="service-item-wrapper">
-                <div class="service-item" data-aos="fade-up" data-aos-delay="200">
-                    <h4 class="vstitle">Vulnerability Assessment</h4>
-                    <ul class="bulletp">
-                        <li>Splunk</li>
-                        <li>Nessus</li>
-                        <li>OWASP Top 10</li>
-                        <li>Wireshark</li>
-
-                    </ul>
+            <div class="education-timeline">
+                <div class="education-item" data-aos="fade-up" data-aos-delay="100">
+                    <div class="education-content">
+                        <div class="institution-logo">
+                            <img src="assets/img/IIT.png" alt="IIT Logo" />
+                        </div>
+                        <div class="education-details">
+                            <h4 class="school">Illinois Institute of Technology</h4>
+                            <p class="degree-field">Master's degree - Cybersecurity</p>
+                            <p class="date">2021 - 2023</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="service-item" data-aos="fade-up" data-aos-delay="250">
-                    <h4 class="vstitle">Penetration testing</h4>
-                    <ul class="bulletp">
-                        <li>BurpSuite</li>
-                        <li>Metasploit</li>
-                        <li>Nmap</li>
-                        <li>Aircrack-ng</li>
-                    </ul>                
-                </div>
-                <div class="service-item" data-aos="fade-up" data-aos-delay="300">
-                    <h4 class="vstitle">Technical Proficiency</h4>
-                    <ul class="bulletp">
-                        <li>Python, PowerShell, SQL</li>
-                        <li>Windows, Kali Linux, MacOS</li>
-                        <li>VMWare, Vbox, Docker</li>
-                        <li>Microsoft Office 365</li>
-                    </ul>                   
+                <div class="education-item" data-aos="fade-up" data-aos-delay="150">
+                    <div class="education-content">
+                        <div class="institution-logo">
+                            <img src="assets/img/RUAS.jpg" alt="RUAS Logo" />
+                        </div>
+                        <div class="education-details">
+                            <h4 class="school">Ramaiah University of Applied Sciences</h4>
+                            <p class="degree-field">Bachelor's degree - Electrical, Electronics and Communications Engineering</p>
+                            <p class="date">2017 - 2021</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
+    </section>
+    <section class="service-section" id="services">
+        <div class="container">
+            <div class="section-name" data-aos="fade-up">
+                <p class="above-title">Expertise</p>
+                <h4 class="title">Professional Skills</h4>
+            </div>
+            <div class="service-item-wrapper">
+                <div class="skills-background"></div>
+                
+                <!-- Security Tools -->
+                <div class="skill-item" data-aos="fade-up" data-aos-delay="50">
+                    <span class="skill-text">Splunk SIEM</span>
+                </div>
+                <div class="skill-item" data-aos="fade-up" data-aos-delay="75">
+                    <span class="skill-text">Nessus</span>
+                </div>
+                <div class="skill-item" data-aos="fade-up" data-aos-delay="100">
+                    <span class="skill-text">OWASP Top 10</span>
+                </div>
+                <div class="skill-item" data-aos="fade-up" data-aos-delay="125">
+                    <span class="skill-text">Wireshark</span>
+                </div>
 
+                <div class="skill-item" data-aos="fade-up" data-aos-delay="50">
+                    <span class="skill-text">ZAP</span>
+                </div>
+                
+                <!-- Security Practices -->
+                <div class="skill-item" data-aos="fade-up" data-aos-delay="150">
+                    <span class="skill-text">Risk Assessment</span>
+                </div>
+                <div class="skill-item" data-aos="fade-up" data-aos-delay="175">
+                    <span class="skill-text">BurpSuite</span>
+                </div>
+                <div class="skill-item" data-aos="fade-up" data-aos-delay="200">
+                    <span class="skill-text">Metasploit</span>
+                </div>
+                <div class="skill-item" data-aos="fade-up" data-aos-delay="225">
+                    <span class="skill-text">Nmap</span>
+                </div>
+                
+                <!-- Testing Tools -->
+                <div class="skill-item" data-aos="fade-up" data-aos-delay="250">
+                    <span class="skill-text">Aircrack-ng</span>
+                </div>
+                <div class="skill-item" data-aos="fade-up" data-aos-delay="275">
+                    <span class="skill-text">Security Audit</span>
+                </div>
+                
+                <!-- Development -->
+                <div class="skill-item" data-aos="fade-up" data-aos-delay="300">
+                    <span class="skill-text">Python</span>
+                </div>
+                <div class="skill-item" data-aos="fade-up" data-aos-delay="325">
+                    <span class="skill-text">PowerShell</span>
+                </div>
+                <div class="skill-item" data-aos="fade-up" data-aos-delay="350">
+                    <span class="skill-text">SQL</span>
+                </div>
+                
+                <!-- Systems -->
+                <div class="skill-item" data-aos="fade-up" data-aos-delay="375">
+                    <span class="skill-text">Linux</span>
+                </div>
+                <div class="skill-item" data-aos="fade-up" data-aos-delay="400">
+                    <span class="skill-text">Windows</span>
+                </div>
+                <div class="skill-item" data-aos="fade-up" data-aos-delay="425">
+                    <span class="skill-text">MacOS</span>
+                </div>
+                
+                <!-- Infrastructure -->
+                <div class="skill-item" data-aos="fade-up" data-aos-delay="450">
+                    <span class="skill-text">VMware</span>
+                </div>
+                <div class="skill-item" data-aos="fade-up" data-aos-delay="475">
+                    <span class="skill-text">Docker</span>
+                </div>
+                <div class="skill-item" data-aos="fade-up" data-aos-delay="500">
+                    <span class="skill-text">DevSecOps</span>
+                </div>
+                
+                <!-- Compliance -->
+                <div class="skill-item" data-aos="fade-up" data-aos-delay="525">
+                    <span class="skill-text">NIST</span>
+                </div>
+                <div class="skill-item" data-aos="fade-up" data-aos-delay="550">
+                    <span class="skill-text">HIPAA</span>
+                </div>
+                <div class="skill-item" data-aos="fade-up" data-aos-delay="575">
+                    <span class="skill-text">Microsoft 365</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="experience-section" id="experience">
+        <div class="container">
+            <div class="section-name" data-aos="fade-up">
+                <p class="above-title">Career path</p>
+                <h4 class="title">Work Experience</h4>
+            </div>
+            <div class="experience-timeline">
+                <div class="timeline-item" data-aos="fade-up">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <img src="assets/img/KU.png" alt="Keiser University Logo" class="company-logo" />
+                        <h4>Cybersecurity Intern</h4>
+                        <p class="location">Chicago, United States</p>
+                        <p class="period">May 2023 - August 2023</p>
+                        <div class="stack-list">
+                            <span class="tag">BurpSuite</span>
+                            <span class="tag">IoT</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <img src="assets/img/RU.jpg" alt="Rush University Medical Center Logo" class="company-logo" />
+                        <h4>Cybersecurity Intern</h4>
+                        <p class="location">Chicago, United States</p>
+                        <p class="period">May 2023 - August 2023</p>
+                        <div class="stack-list">
+                            <span class="tag">BurpSuite</span>
+                            <span class="tag">IoT</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <img src="assets/img/METI.jpg" alt="METI JAPAN Logo" class="company-logo" />
+                        <h4>Application Security Intern</h4>
+                        <p class="location">Nagoya, Japan</p>
+                        <p class="period">August 2021 - December 2021</p>
+                        <div class="stack-list">
+                            <span class="tag">SQL</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item" data-aos="fade-up" data-aos-delay="300">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <img src="assets/img/CPS.png" alt="Chicago Public Schools Logo" class="company-logo" />
+                        <h4>Exam Proctor</h4>
+                        <p class="location">Chicago, United States</p>
+                        <p class="period">Oct 2022 - May 2023 · Part-time</p>
+                        <div class="stack-list">
+                            <span class="tag">Microsoft Office</span>
+                            <span class="tag">Leadership</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="certifications-section" id="certifications">
+        <div class="container">
+            <div class="section-name" data-aos="fade-up">
+                <p class="above-title">Professional Growth</p>
+                <h4 class="title">Certifications</h4>
+            </div>
+            <div class="certifications-grid">
+                <div class="certification-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="certification-content">
+                        <div class="cert-logo">
+                            <img src="assets/img/compTIA.png" alt="CompTIA Logo" />
+                            <div class="verified-badge">
+                                <svg viewBox="0 0 24 24" class="verified-icon">
+                                    <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="cert-details">
+                            <h4 class="cert-name">CompTIA Security+</h4>
+                            <p class="issuer">CompTIA</p>
+                            <p class="candidate-id">Candidate ID - COMP001022360505</p>
+                            <a href="https://www.credly.com/badges/84bbd1ee-9f65-4bd2-841e-e15c99479001/linked_in_profile" class="cert-link" target="_blank">View Certificate</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="certification-card" data-aos="fade-up" data-aos-delay="125">
+                    <div class="certification-content">
+                        <div class="cert-logo">
+                            <img src="assets/img/ITS.png" alt="Pearson Logo" />
+                            <div class="verified-badge">
+                                <svg viewBox="0 0 24 24" class="verified-icon">
+                                    <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="cert-details">
+                            <h4 class="cert-name">IT Specialist</h4>
+                            <p class="issuer">Pearson (IT Support)</p>
+                            <a href="https://www.credly.com/badges/7ba48075-e1eb-421b-83e0-610762e7a5dc/public_url" class="cert-link" target="_blank">View Certificate</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="certification-card" data-aos="fade-up" data-aos-delay="150">
+                    <div class="certification-content">
+                        <div class="cert-logo">
+                            <img src="assets/img/cisco.png" alt="Cisco Logo" />
+                            <div class="verified-badge">
+                                <svg viewBox="0 0 24 24" class="verified-icon">
+                                    <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="cert-details">
+                            <h4 class="cert-name">Cisco Certified Support Technician</h4>
+                            <p class="issuer">Cisco</p>
+                            <a href="https://www.credly.com/badges/605bc1c3-3ce1-487f-90c1-286debe4ad07/public_url" class="cert-link" target="_blank">View Certificate</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="certification-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="certification-content">
+                        <div class="cert-logo">
+                            <img src="assets/img/USDH.png" alt="ICS Logo" />
+                            <div class="verified-badge">
+                                <svg viewBox="0 0 24 24" class="verified-icon">
+                                    <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="cert-details">
+                            <h4 class="cert-name">210W-06 ICS Cybersecurity Threats Certification</h4>
+                            <p class="issuer">ICS</p>
+                            <a href="https://drive.google.com/file/d/1LVveozZUK8KU113fDDRvGnPr9DLcjIn5/view?usp=share_link" class="cert-link" target="_blank">View Certificate</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
     <section class="portfolio-section" id="portfolios">
         <div class="container">
@@ -251,70 +480,6 @@ cybersecurity posture.</p>
             </div>
         </div>
     </section>
-    <section class="experience-section" id="experience">
-        <div class="container">
-            <div class="section-name" data-aos="fade-up">
-                <p class="above-title">Career path</p>
-                <h4 class="title">Work Experience</h4>
-            </div>
-            <div class="experience-timeline">
-                <div class="timeline-item" data-aos="fade-up">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <img src="assets/img/KU.png" alt="Keiser University Logo" class="company-logo" />
-                        <h4>Cybersecurity Intern</h4>
-                        <p class="location">Chicago, United States</p>
-                        <p class="period">May 2023 - August 2023</p>
-                        <div class="stack-list">
-                            <span class="tag">BurpSuite</span>
-                            <span class="tag">IoT</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <img src="assets/img/RU.jpg" alt="Rush University Medical Center Logo" class="company-logo" />
-                        <h4>Cybersecurity Intern</h4>
-                        <p class="location">Chicago, United States</p>
-                        <p class="period">May 2023 - August 2023</p>
-                        <div class="stack-list">
-                            <span class="tag">BurpSuite</span>
-                            <span class="tag">IoT</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <img src="assets/img/METI.jpg" alt="METI JAPAN Logo" class="company-logo" />
-                        <h4>Application Security Intern</h4>
-                        <p class="location">Nagoya, Japan</p>
-                        <p class="period">August 2021 - December 2021</p>
-                        <div class="stack-list">
-                            <span class="tag">SQL</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="timeline-item" data-aos="fade-up" data-aos-delay="300">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <img src="assets/img/CPS.png" alt="Chicago Public Schools Logo" class="company-logo" />
-                        <h4>Exam Proctor</h4>
-                        <p class="location">Chicago, United States</p>
-                        <p class="period">Oct 2022 - May 2023 · Part-time</p>
-                        <div class="stack-list">
-                            <span class="tag">Microsoft Office</span>
-                            <span class="tag">Leadership</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
     <section class="blog-section" id="blog">
         <div class="container">
             <div class="section-name center" data-aos="fade-up">
@@ -395,123 +560,6 @@ cybersecurity posture.</p>
             </div>
         </div>
     </section> -->
-    <section class="education-section" id="education">
-        <div class="container">
-            <div class="section-name" data-aos="fade-up">
-                <p class="above-title">Learning Path</p>
-                <h4 class="title">Education</h4>
-            </div>
-            <div class="education-timeline">
-                <div class="education-item" data-aos="fade-up" data-aos-delay="100">
-                    <div class="education-content">
-                        <div class="institution-logo">
-                            <img src="assets/img/IIT.png" alt="IIT Logo" />
-                        </div>
-                        <div class="education-details">
-                            <h4 class="school">Illinois Institute of Technology</h4>
-                            <p class="degree-field">Master's degree - Cybersecurity</p>
-                            <p class="date">2021 - 2023</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="education-item" data-aos="fade-up" data-aos-delay="150">
-                    <div class="education-content">
-                        <div class="institution-logo">
-                            <img src="assets/img/RUAS.jpg" alt="RUAS Logo" />
-                        </div>
-                        <div class="education-details">
-                            <h4 class="school">Ramaiah University of Applied Sciences</h4>
-                            <p class="degree-field">Bachelor's degree - Electrical, Electronics and Communications Engineering</p>
-                            <p class="date">2017 - 2021</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="certifications-section" id="certifications">
-        <div class="container">
-            <div class="section-name" data-aos="fade-up">
-                <p class="above-title">Professional Growth</p>
-                <h4 class="title">Certifications</h4>
-            </div>
-            <div class="certifications-grid">
-                <div class="certification-card" data-aos="fade-up" data-aos-delay="100">
-                    <div class="certification-content">
-                        <div class="cert-logo">
-                            <img src="assets/img/compTIA.png" alt="CompTIA Logo" />
-                            <div class="verified-badge">
-                                <svg viewBox="0 0 24 24" class="verified-icon">
-                                    <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
-                                </svg>
-                            </div>
-                        </div>
-                        <div class="cert-details">
-                            <h4 class="cert-name">CompTIA Security+</h4>
-                            <p class="issuer">CompTIA</p>
-                            <p class="candidate-id">Candidate ID - COMP001022360505</p>
-                            <a href="https://www.credly.com/badges/84bbd1ee-9f65-4bd2-841e-e15c99479001/linked_in_profile" class="cert-link" target="_blank">View Certificate</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="certification-card" data-aos="fade-up" data-aos-delay="125">
-                    <div class="certification-content">
-                        <div class="cert-logo">
-                            <img src="assets/img/ITS.png" alt="Pearson Logo" />
-                            <div class="verified-badge">
-                                <svg viewBox="0 0 24 24" class="verified-icon">
-                                    <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
-                                </svg>
-                            </div>
-                        </div>
-                        <div class="cert-details">
-                            <h4 class="cert-name">IT Specialist</h4>
-                            <p class="issuer">Pearson (IT Support)</p>
-                            <a href="https://www.credly.com/badges/7ba48075-e1eb-421b-83e0-610762e7a5dc/public_url" class="cert-link" target="_blank">View Certificate</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="certification-card" data-aos="fade-up" data-aos-delay="150">
-                    <div class="certification-content">
-                        <div class="cert-logo">
-                            <img src="assets/img/cisco.png" alt="Cisco Logo" />
-                            <div class="verified-badge">
-                                <svg viewBox="0 0 24 24" class="verified-icon">
-                                    <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
-                                </svg>
-                            </div>
-                        </div>
-                        <div class="cert-details">
-                            <h4 class="cert-name">Cisco Certified Support Technician</h4>
-                            <p class="issuer">Cisco</p>
-                            <a href="https://www.credly.com/badges/605bc1c3-3ce1-487f-90c1-286debe4ad07/public_url" class="cert-link" target="_blank">View Certificate</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="certification-card" data-aos="fade-up" data-aos-delay="200">
-                    <div class="certification-content">
-                        <div class="cert-logo">
-                            <img src="assets/img/USDH.png" alt="ICS Logo" />
-                            <div class="verified-badge">
-                                <svg viewBox="0 0 24 24" class="verified-icon">
-                                    <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
-                                </svg>
-                            </div>
-                        </div>
-                        <div class="cert-details">
-                            <h4 class="cert-name">210W-06 ICS Cybersecurity Threats Certification</h4>
-                            <p class="issuer">ICS</p>
-                            <a href="https://drive.google.com/file/d/1LVveozZUK8KU113fDDRvGnPr9DLcjIn5/view?usp=share_link" class="cert-link" target="_blank">View Certificate</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
     <section class="contact-section" id="contact">
         <div class="container">
             <div class="contact-wrapper">

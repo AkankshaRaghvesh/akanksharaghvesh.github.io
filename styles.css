@@ -183,12 +183,187 @@ h1, h2, h3, h4, h5, h6 {
 /* Add animation to the service section */
 .service-section {
     animation: fadeInUp 1s ease-in-out;
-    position: relative; /* Add relative positioning to create a stacking context */
+    position: relative;
+    background: var(--light);
+    padding: 80px 0;
+    margin: 0;
+    scroll-margin-top: 100px;
+    overflow: hidden;
+}
+
+[data-theme="dark"] .service-section {
+    background: var(--midnight-express);
+}
+
+.service-item-wrapper {
+    margin-top: 4rem;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+    padding: 0 1rem;
+    z-index: 2;
+}
+
+.skill-item {
+    position: relative;
+    flex: 0 1 auto;
+    padding: 0.8rem 1.5rem;
+    background: var(--white);
+    border-radius: 12px;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    transform-origin: center;
+    border: 1px solid rgba(126, 116, 241, 0.1);
+}
+
+[data-theme="dark"] .skill-item {
+    background: var(--licorice);
+    border-color: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.skill-item:hover {
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0 5px 20px rgba(126, 116, 241, 0.2);
+    border-color: var(--purple);
+}
+
+[data-theme="dark"] .skill-item:hover {
+    box-shadow: 0 5px 20px rgba(126, 116, 241, 0.1);
+    background: var(--midnight-express);
+}
+
+.skill-text {
+    color: var(--cinder);
+    font-size: 0.95rem;
+    font-weight: 500;
+    position: relative;
+    z-index: 1;
+    transition: all 0.3s ease;
+}
+
+[data-theme="dark"] .skill-text {
+    color: var(--white);
+}
+
+.skill-item:hover .skill-text {
+    color: var(--purple);
+}
+
+.skill-item::before {
+    content: '';
+    position: absolute;
+    inset: -1px;
+    border-radius: 12px;
+    padding: 1px;
+    background: linear-gradient(45deg, var(--purple), transparent, var(--purple));
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.skill-item:hover::before {
+    opacity: 1;
+}
+
+.skill-item::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: 12px;
+    background: linear-gradient(45deg, 
+        rgba(126, 116, 241, 0.05),
+        rgba(126, 116, 241, 0.1),
+        rgba(126, 116, 241, 0.05)
+    );
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+[data-theme="dark"] .skill-item::after {
+    background: linear-gradient(45deg, 
+        rgba(126, 116, 241, 0.1),
+        rgba(126, 116, 241, 0.15),
+        rgba(126, 116, 241, 0.1)
+    );
+}
+
+.skill-item:hover::after {
+    opacity: 1;
+}
+
+.skills-background {
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    opacity: 0.05;
+    background: 
+        radial-gradient(circle at 20% 20%, var(--purple) 0%, transparent 40%),
+        radial-gradient(circle at 80% 80%, var(--purple) 0%, transparent 40%);
+    z-index: 1;
+}
+
+[data-theme="dark"] .skills-background {
+    opacity: 0.08;
+    background: 
+        radial-gradient(circle at 20% 20%, var(--purple) 0%, transparent 50%),
+        radial-gradient(circle at 80% 80%, var(--purple) 0%, transparent 50%),
+        radial-gradient(circle at 50% 50%, var(--purple) 0%, transparent 60%);
+}
+
+@media only screen and (max-width: 992px) {
+    .service-item-wrapper {
+        gap: 1.25rem;
+    }
+    
+    .skill-item {
+        padding: 0.7rem 1.2rem;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .service-section {
+        padding: 60px 0;
+    }
+    
+    .service-item-wrapper {
+        gap: 1rem;
+        margin-top: 3rem;
+    }
+    
+    .skill-text {
+        font-size: 0.9rem;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .service-section {
+        padding: 40px 0;
+    }
+    
+    .service-item-wrapper {
+        padding: 0 0.5rem;
+    }
+    
+    .skill-item {
+        padding: 0.6rem 1rem;
+    }
+    
+    .skill-text {
+        font-size: 0.85rem;
+    }
 }
 
 /* Center align text in .section-name */
 .section-name.center {
-    text-align: center;
+    display: block; /* Change from flex to block */
+    text-align: left; /* Change from center to left */
 }
 
 /* Style .vstitle */
@@ -219,6 +394,7 @@ h1, h2, h3, h4, h5, h6 {
 .bulletp li {
     margin: 5px 0; /* Add spacing between list items */
 }
+
 
 
 .above-title:after {
@@ -535,58 +711,6 @@ input[type='text']::placeholder, input[type='email']::placeholder,::placeholder 
 @keyframes enter-hero-cover {
     from { transform: rotate(360deg)}
     to { transform: rotate(350deg)}
-}
-
-/* SERVICES SECTION */
-
-.service-section {
-    background: var(--light);
-    padding: 114px 0 184px;
-    margin: 196px 0 0;
-}
-
-.service-section .service-item-wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 104px 0 0;
-}
-.service-section .service-item {
-    background: var(--white);
-    border-radius: 8px;
-    padding: 56px 48px;
-    text-align: center;
-    min-width: 357px;
-}
-[data-theme="dark"] .service-section .service-item {
-    background: var(--licorice);
-}
-.service-section .service-item:not(:last-of-type) {
-    margin-right: 48px;
-}
-.service-section .service-item .icon {
-    width: 56px;
-    height: 56px;
-    padding: 16px;
-    background: var(--purple-light-2);
-    border-radius: 16px;
-    margin: 0 auto 24px;
-}
-.service-section .service-item .icon svg {
-    fill: var(--purple);
-}
-.service-section .service-item .title {
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
-    margin-bottom: 16px;
-}
-.service-section .service-item .body {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 24px;
 }
 
 /* PORTFOLIO SECTION */
@@ -1108,7 +1232,7 @@ input[type='text']::placeholder, input[type='email']::placeholder,::placeholder 
 
 /* EDUCATION SECTION */
 .education-section {
-    padding: 104px 0 120px;
+    padding: 104px 0 60px;
     background: var(--light);
 }
 
@@ -1634,8 +1758,8 @@ input[type='text']::placeholder, input[type='email']::placeholder,::placeholder 
     }
     /* SERVICES */
     .service-section {
-        padding: 82px 0 88px;
-        margin: 164px 0 0;
+        padding: 40px 0 88px;
+        margin: 0;
     }
     /* PORTFOLIO */
     .portfolio-section {
@@ -1833,7 +1957,8 @@ input[type='text']::placeholder, input[type='email']::placeholder,::placeholder 
     }
     /* SERVICES */
     .service-section {
-        margin: 96px 0 0;
+        padding: 20px 0 60px;
+        margin: 0;
     }
     .service-section .service-item-wrapper {
         padding: 80px 0 0;
