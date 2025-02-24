@@ -233,4 +233,25 @@ document.addEventListener("DOMContentLoaded", function (event) {
     var currentYear = new Date().getFullYear();
     var copyrightText = document.querySelector(".footer .copyright .year").innerHTML
     document.querySelector(".footer .copyright .year").innerHTML = copyrightText.replace('year', currentYear);
+
+    // Timeline animations
+    const timelineItems = document.querySelectorAll('.timeline-item');
+    
+    const observerOptions = {
+        root: null,
+        rootMargin: '0px',
+        threshold: 0.3
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('active');
+            }
+        });
+    }, observerOptions);
+
+    timelineItems.forEach(item => {
+        observer.observe(item);
+    });
 })

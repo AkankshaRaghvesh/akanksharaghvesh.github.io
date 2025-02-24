@@ -32,14 +32,16 @@
                 <li class="experience" data-aos-delay="300" data-aos="fade-down"><a href="#experience">Experience</a></li>
                 <li class="blog" data-aos-delay="350" data-aos="fade-down"><a href="#blog">Volunteering</a></li>
                 <!-- <li class="testimonials mobile-link" data-aos-delay="350" data-aos="fade-down"><a href="#testimonials">Testimonials</a></li> -->
-                <li class="education-skill mobile-link" data-aos-delay="350" data-aos="fade-down"><a href="#education">Education</a></li>
+                <li class="education mobile-link" data-aos-delay="350" data-aos="fade-down"><a href="#education">Education</a></li>
+                <li class="certifications mobile-link" data-aos-delay="350" data-aos="fade-down"><a href="#certifications">Certifications</a></li>
                 <li class="contact mobile-link" data-aos-delay="350" data-aos="fade-down"><a href="#contact">Contact</a></li>
                 <!-- <li class="mobile-link" data-aos-delay="350" data-aos="fade-down"><a href="assets/resume.pdf" >Resume</a></li> -->
                 <li data-aos-delay="400" data-aos="fade-down" class="more-links">
                     <svg viewBox="0 0 12 3"><use xlink:href="assets/img/sprite.svg#more-links"></use></svg>
                     <ul class="menu-list">
                         <!-- <li class="testimonials"><a href="#testimonials">Testimonials</a></li> -->
-                        <li class="education-skill"><a href="#education">Education</a></li>
+                        <li class="education"><a href="#education">Education</a></li>
+                        <li class="certifications"><a href="#certifications">Certifications</a></li>
                         <li class="contact"><a href="#contact">Contact</a></li>
                     </ul>
                 </li>
@@ -251,114 +253,65 @@ cybersecurity posture.</p>
     </section>
     <section class="experience-section" id="experience">
         <div class="container">
-            <div class="side">
-                <div class="section-name" data-aos="fade-up">
-                    <p class="above-title">Career path</p>
-                    <h4 class="title">Work Experience</h4>
-                </div>
-                <div class="companies-list">
-                    <div class="selector">
-                        <svg viewBox="0 0 24 24">
-                            <use xlink:href="assets/img/sprite.svg#arrow-right"></use>
-                        </svg>
-                    </div>
-                    <ul>
-                        <li data-tab="google" class="active" data-aos="fade-up">Keiser University</li>
-                        <li data-tab="apple" data-aos-delay="50" data-aos="fade-up">Rush University Medical Center</li>
-                        <li data-tab="microsoft" data-aos-delay="100" data-aos="fade-up">Meti Japan Intern Program </li>
-                        <li data-tab="facebook" data-aos-delay="150" data-aos="fade-up">Chicago Public Schools</li>
-                    </ul>
-                </div>
+            <div class="section-name" data-aos="fade-up">
+                <p class="above-title">Career path</p>
+                <h4 class="title">Work Experience</h4>
             </div>
-            <div class="content active" id="google">
-                <div class="headline" data-aos-delay="50" data-aos="fade-up">
-                    <div class="job-title-container">
+            <div class="experience-timeline">
+                <div class="timeline-item" data-aos="fade-up">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
                         <img src="assets/img/KU.png" alt="Keiser University Logo" class="company-logo" />
-                        <div class="job-details-wrapper">
-                            <h4 class="job-title">Cybersecurity Intern</h4>
-                            <p class="location">Chicago, United States</p>
-                            <p class="period">May 2023 - August 2023</p>
-                            <ul class="stack-list">
-                                <li class="tag">BurpSuite</li>
-                                <li class="tag">IoT</li>
-                            </ul>
+                        <h4>Cybersecurity Intern</h4>
+                        <p class="location">Chicago, United States</p>
+                        <p class="period">May 2023 - August 2023</p>
+                        <div class="stack-list">
+                            <span class="tag">BurpSuite</span>
+                            <span class="tag">IoT</span>
                         </div>
                     </div>
                 </div>
-                <div class="line"></div>
-                <ul class="responsibilities">
-                    <li data-aos-delay="50" data-aos="fade-up">There was a need to conduct thorough assessments of web-based systems to identify threats and safeguard sensitive data.</li>
-                    <li data-aos-delay="100" data-aos="fade-up">Conducted in-depth web application assessments to assess scalability and ensure compliance with security standards.</li>
-                    <li data-aos-delay="150" data-aos="fade-up">Employed Burp Suite for detailed web application assessments, systematically identifying and analyzing vulnerabilities.</li>
-                    <li data-aos-delay="200" data-aos="fade-up">Successfully identified and documented vulnerabilities in web-based systems, enabling proactive security measures to mitigate potential risks.</li>
-                </ul>
-            </div>
-            <div class="content" id="apple">
-                <div class="headline" data-aos-delay="50" data-aos="fade-up">
-                    <div class="job-title-container">
+
+                <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
                         <img src="assets/img/RU.jpg" alt="Rush University Medical Center Logo" class="company-logo" />
-                        <div class="job-details-wrapper">
-                            <h4 class="job-title">Cybersecurity Intern</h4>
-                            <p class="location">Chicago, United States</p>
-                            <p class="period">May 2023 - August 2023</p>
-                            <ul class="stack-list">
-                                <li class="tag">BurpSuite</li>
-                                <li class="tag">IoT</li>
-                            </ul>
+                        <h4>Cybersecurity Intern</h4>
+                        <p class="location">Chicago, United States</p>
+                        <p class="period">May 2023 - August 2023</p>
+                        <div class="stack-list">
+                            <span class="tag">BurpSuite</span>
+                            <span class="tag">IoT</span>
                         </div>
                     </div>
                 </div>
-                <div class="line"></div>
-                <ul class="responsibilities">
-                    <li>There was a need to conduct thorough assessments of web-based systems to identify threats and safeguard sensitive data.</li>
-                    <li>Conducted in-depth web application assessments to assess scalability and ensure compliance with security standards.</li>
-                    <li>Employed Burp Suite for detailed web application assessments, systematically identifying and analyzing vulnerabilities.</li>
-                    <li>Successfully identified and documented vulnerabilities in web-based systems, enabling proactive security measures to mitigate potential risks.</li>
-                </ul>
-            </div>
-            <div class="content" id="microsoft">
-                <div class="headline" data-aos-delay="50" data-aos="fade-up">
-                    <div class="job-title-container">
+
+                <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
                         <img src="assets/img/METI.jpg" alt="METI JAPAN Logo" class="company-logo" />
-                        <div class="job-details-wrapper">
-                            <h4 class="job-title">Application Security Intern</h4>
-                            <p class="location">Nagoya, Japan</p>
-                            <p class="period">August 2021 - December 2021</p>
-                            <ul class="stack-list">
-                                <li class="tag">SQL</li>
-                            </ul>
+                        <h4>Application Security Intern</h4>
+                        <p class="location">Nagoya, Japan</p>
+                        <p class="period">August 2021 - December 2021</p>
+                        <div class="stack-list">
+                            <span class="tag">SQL</span>
                         </div>
                     </div>
                 </div>
-                <div class="line"></div>
-                <ul class="responsibilities">
-                    <li>Tasked with addressing critical application security vulnerabilities like SQL injection and insecure authentication.</li>
-                    <li>Led a team of five to address and mitigate SQL injection, XSS (Cross-site scripting), and authentication vulnerabilities.</li>
-                    <li>Collaborated on network reconnaissance, port scanning, and traffic analysis to identify and mitigate network weaknesses.</li>
-                    <li>Contributed to a significant reduction in vulnerabilities, achieved a twofold improvement in authentication security.</li>
-                </ul>
-            </div>
-            <div class="content" id="facebook">
-                <div class="headline" data-aos-delay="50" data-aos="fade-up">
-                    <div class="job-title-container">
+
+                <div class="timeline-item" data-aos="fade-up" data-aos-delay="300">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
                         <img src="assets/img/CPS.png" alt="Chicago Public Schools Logo" class="company-logo" />
-                        <div class="job-details-wrapper">
-                            <h4 class="job-title">Exam Proctor</h4>
-                            <p class="location">Chicago, United States</p>
-                            <p class="period">Oct 2022 - May 2023 · Part-time</p>
-                            <ul class="stack-list">
-                                <li class="tag">Microsoft Office</li>
-                                <li class="tag">Leadership</li>
-                            </ul>
+                        <h4>Exam Proctor</h4>
+                        <p class="location">Chicago, United States</p>
+                        <p class="period">Oct 2022 - May 2023 · Part-time</p>
+                        <div class="stack-list">
+                            <span class="tag">Microsoft Office</span>
+                            <span class="tag">Leadership</span>
                         </div>
                     </div>
                 </div>
-                <div class="line"></div>
-                <ul class="responsibilities">
-                    <li>Supervised students during exams, maintaining test integrity and preventing misconduct.</li>
-                    <li>Assisted in exam logistics, including setup, material distribution, and documentation.</li>
-                    <li>Fostered a positive testing environment, providing support to students and addressing unforeseen issues.</li>
-                </ul>
             </div>
         </div>
     </section>
@@ -442,46 +395,118 @@ cybersecurity posture.</p>
             </div>
         </div>
     </section> -->
-    <section class="education-skill-section" id="education">
+    <section class="education-section" id="education">
         <div class="container">
             <div class="section-name" data-aos="fade-up">
                 <p class="above-title">Learning Path</p>
                 <h4 class="title">Education</h4>
             </div>
-            <div class="education-skill-wrapper">
-                <div class="education">
-                    <div class="education-item" data-aos="fade-up" data-aos-delay="100">
-                        <h4 class="school">Illinois Institute of Technology</h4>
-                        <p class="degree-field">Master's degree - Cybersecurity</p>
-                        <p class="date">2021 - Expected 2023</p>
-                    </div>
-                    <div class="education-item" data-aos="fade-up" data-aos-delay="150">
-                        <h4 class="school">Ramaiah University of Applied Sciences</h4>
-                        <p class="degree-field">Bachelor's degree -  Electrical, Electronics and Communications Engineering</p>
-                        <p class="date">2017 - 2021</p>
+            <div class="education-timeline">
+                <div class="education-item" data-aos="fade-up" data-aos-delay="100">
+                    <div class="education-content">
+                        <div class="institution-logo">
+                            <img src="assets/img/IIT.png" alt="IIT Logo" />
+                        </div>
+                        <div class="education-details">
+                            <h4 class="school">Illinois Institute of Technology</h4>
+                            <p class="degree-field">Master's degree - Cybersecurity</p>
+                            <p class="date">2021 - 2023</p>
+                        </div>
                     </div>
                 </div>
-                <div class="skill">
-                    <p class="description" data-aos="fade-up" data-aos-delay="50">
-                        <span class="boldme">Certifications</span>
-                         <ul class="ulcont">
-                            <li>ComptIA Security+</li>
-                            <li> CISCO Certified Support Technician </li>
-                             <li> 210W-06 ICS Cybersecurity Threats Certification </li>
-                         </ul>              </p>
-                    <!-- <div class="progress-bar-wrapper" data-aos="fade-up" data-aos-delay="50">
-                        <div class="progress-bar">
-                            <p class="label">React</p>
-                            <div class="main-bar"><div class="fill" data-width="70"></div></div>
+                <div class="education-item" data-aos="fade-up" data-aos-delay="150">
+                    <div class="education-content">
+                        <div class="institution-logo">
+                            <img src="assets/img/RUAS.jpg" alt="RUAS Logo" />
                         </div>
-                        <div class="progress-bar">
-                            <p class="label">Angular</p>
-                            <div class="main-bar"><div class="fill" data-width="60"></div></div>
+                        <div class="education-details">
+                            <h4 class="school">Ramaiah University of Applied Sciences</h4>
+                            <p class="degree-field">Bachelor's degree - Electrical, Electronics and Communications Engineering</p>
+                            <p class="date">2017 - 2021</p>
                         </div>
-                        <div class="progress-bar">
-                            <p class="label">JavaScript</p>
-                            <div class="main-bar"><div class="fill" data-width="55"></div></div>
-                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="certifications-section" id="certifications">
+        <div class="container">
+            <div class="section-name" data-aos="fade-up">
+                <p class="above-title">Professional Growth</p>
+                <h4 class="title">Certifications</h4>
+            </div>
+            <div class="certifications-grid">
+                <div class="certification-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="certification-content">
+                        <div class="cert-logo">
+                            <img src="assets/img/compTIA.png" alt="CompTIA Logo" />
+                            <div class="verified-badge">
+                                <svg viewBox="0 0 24 24" class="verified-icon">
+                                    <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="cert-details">
+                            <h4 class="cert-name">CompTIA Security+</h4>
+                            <p class="issuer">CompTIA</p>
+                            <p class="candidate-id">Candidate ID - COMP001022360505</p>
+                            <a href="https://www.credly.com/badges/84bbd1ee-9f65-4bd2-841e-e15c99479001/linked_in_profile" class="cert-link" target="_blank">View Certificate</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="certification-card" data-aos="fade-up" data-aos-delay="125">
+                    <div class="certification-content">
+                        <div class="cert-logo">
+                            <img src="assets/img/ITS.png" alt="Pearson Logo" />
+                            <div class="verified-badge">
+                                <svg viewBox="0 0 24 24" class="verified-icon">
+                                    <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="cert-details">
+                            <h4 class="cert-name">IT Specialist</h4>
+                            <p class="issuer">Pearson (IT Support)</p>
+                            <a href="https://www.credly.com/badges/7ba48075-e1eb-421b-83e0-610762e7a5dc/public_url" class="cert-link" target="_blank">View Certificate</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="certification-card" data-aos="fade-up" data-aos-delay="150">
+                    <div class="certification-content">
+                        <div class="cert-logo">
+                            <img src="assets/img/cisco.png" alt="Cisco Logo" />
+                            <div class="verified-badge">
+                                <svg viewBox="0 0 24 24" class="verified-icon">
+                                    <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="cert-details">
+                            <h4 class="cert-name">Cisco Certified Support Technician</h4>
+                            <p class="issuer">Cisco</p>
+                            <a href="https://www.credly.com/badges/605bc1c3-3ce1-487f-90c1-286debe4ad07/public_url" class="cert-link" target="_blank">View Certificate</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="certification-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="certification-content">
+                        <div class="cert-logo">
+                            <img src="assets/img/USDH.png" alt="ICS Logo" />
+                            <div class="verified-badge">
+                                <svg viewBox="0 0 24 24" class="verified-icon">
+                                    <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="cert-details">
+                            <h4 class="cert-name">210W-06 ICS Cybersecurity Threats Certification</h4>
+                            <p class="issuer">ICS</p>
+                            <a href="https://drive.google.com/file/d/1LVveozZUK8KU113fDDRvGnPr9DLcjIn5/view?usp=share_link" class="cert-link" target="_blank">View Certificate</a>
+                        </div>
                     </div>
                 </div>
             </div>
