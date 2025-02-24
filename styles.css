@@ -715,6 +715,194 @@ input[type='text']::placeholder, input[type='email']::placeholder,::placeholder 
 .experience-section .container {
     display: flex;
 }
+
+/* Company Logo Styles */
+.company-logo {
+    display: none;
+    width: 140px;
+    height: 140px;
+    object-fit: contain;
+    margin-right: 32px;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+    background-color: #FFFFFF !important;
+    padding: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex-shrink: 0;
+}
+
+[data-theme="dark"] .company-logo {
+    background-color: #FFFFFF !important;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.company-logo.visible {
+    display: block;
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+.job-title-container {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 16px;
+}
+
+.job-details-wrapper {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.job-title-container .job-title {
+    font-size: 22px;
+    line-height: 24px;
+    color: var(--cinder);
+    margin-bottom: 0;
+    font-weight: 600;
+}
+
+.job-title-container .location {
+    font-size: 14px;
+    line-height: 16px;
+    color: var(--cinder);
+    margin-bottom: 0;
+}
+
+.job-title-container .period {
+    font-size: 13px;
+    line-height: 15px;
+    color: var(--cinder-light);
+    margin-bottom: 2px;
+}
+
+.job-title-container .stack-list {
+    margin-top: 4px;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+}
+
+.job-title-container .stack-list .tag {
+    margin: 0;
+    font-size: 11px;
+    padding: 2px 6px;
+    background-color: var(--purple-light-2);
+    border-color: transparent;
+    line-height: 14px;
+}
+
+/* Mobile Responsive Adjustments */
+@media only screen and (max-width: 992px) {
+    .company-logo {
+        width: 120px;
+        height: 120px;
+        padding: 12px;
+        margin-right: 24px;
+    }
+
+    .job-details-wrapper {
+        gap: 2px;
+    }
+
+    .job-title-container .job-title {
+        font-size: 20px;
+        line-height: 22px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .company-logo {
+        width: 100px;
+        height: 100px;
+        padding: 10px;
+        margin-right: 20px;
+    }
+
+    .job-details-wrapper {
+        gap: 1px;
+    }
+
+    .job-title-container {
+        margin-bottom: 12px;
+    }
+
+    .job-title-container .job-title {
+        font-size: 18px;
+        line-height: 20px;
+    }
+
+    .job-title-container .location {
+        font-size: 13px;
+        line-height: 15px;
+    }
+
+    .job-title-container .period {
+        font-size: 12px;
+        line-height: 14px;
+        margin-bottom: 1px;
+    }
+
+    .job-title-container .stack-list {
+        margin-top: 3px;
+        gap: 3px;
+    }
+
+    .job-title-container .stack-list .tag {
+        font-size: 10px;
+        padding: 2px 5px;
+        line-height: 12px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .job-title-container {
+        margin-bottom: 10px;
+    }
+
+    .company-logo {
+        width: 90px;
+        height: 90px;
+        padding: 8px;
+        margin-right: 0;
+        margin-bottom: 16px;
+    }
+
+    .job-details-wrapper {
+        width: 100%;
+        align-items: center;
+        gap: 1px;
+    }
+
+    .job-title-container .job-title {
+        font-size: 17px;
+        line-height: 19px;
+    }
+
+    .job-title-container .location {
+        font-size: 12px;
+        line-height: 14px;
+    }
+
+    .job-title-container .period {
+        font-size: 11px;
+        line-height: 13px;
+        margin-bottom: 1px;
+    }
+
+    .job-title-container .stack-list {
+        margin-top: 2px;
+        gap: 3px;
+    }
+
+    .job-title-container .stack-list .tag {
+        padding: 1px 4px;
+        font-size: 10px;
+        line-height: 12px;
+    }
+}
+
 .experience-section .side  {
     width: 100%;
     max-width: 300px;
@@ -814,7 +1002,7 @@ input[type='text']::placeholder, input[type='email']::placeholder,::placeholder 
     display: inline-block;
     border-bottom: 1px solid var(--light-2);
     width: 100%;
-    margin: 16px 0 28px;
+    margin: 12px 0 20px;
 }
 .experience-section .content .responsibilities {
     padding-left: 28px;

@@ -108,16 +108,37 @@ document.addEventListener("DOMContentLoaded", function (event) {
     document.querySelector(".experience-section .companies-list").addEventListener('click', function (e) {
         e.preventDefault();
         if (e.target.tagName === 'LI') {
-           window.innerWidth > 992 ? document.querySelector(".experience-section .selector").style.top = e.target.offsetTop + 'px' : null;
-            document.querySelector(".experience-section .companies-list li.active").classList.remove('active')
+            // Handle selector position for desktop
+            window.innerWidth > 992 ? document.querySelector(".experience-section .selector").style.top = e.target.offsetTop + 'px' : null;
+            
+            // Remove active class from previous active elements
+            document.querySelector(".experience-section .companies-list li.active").classList.remove('active');
+            document.querySelectorAll(".company-logo.visible").forEach(logo => logo.classList.remove('visible'));
+            
+            // Add active class to clicked element
             e.target.classList.add('active');
+            
             var targetTab = e.target.getAttribute('data-tab');
             if (targetTab) {
-                document.querySelector(".experience-section .content.active").classList.remove('active')
-                document.getElementById(targetTab).classList.add('active')
+                // Show content
+                document.querySelector(".experience-section .content.active").classList.remove('active');
+                const newActiveContent = document.getElementById(targetTab);
+                newActiveContent.classList.add('active');
+                
+                // Show logo with animation
+                const logo = newActiveContent.querySelector('.company-logo');
+                if (logo) {
+                    setTimeout(() => {
+                        logo.classList.add('visible');
+                    }, 100);
+                }
             }
         }
     });
+
+    // Initialize first logo as visible
+    document.querySelector(".content.active .company-logo")?.classList.add('visible');
+    
     // Skill
     var bars = document.querySelectorAll(".progress-bar .main-bar .fill");
     window.addEventListener('scroll', function () {
