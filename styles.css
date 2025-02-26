@@ -647,10 +647,34 @@ input[type='text']::placeholder, input[type='email']::placeholder,::placeholder 
     margin: 0 0 32px;
 }
 .hero-section .content .about {
-    max-width: 538px;
-    line-height: 32px;
-    margin: 0 0 40px;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--cinder-light);
+    margin-bottom: 2rem;
+    max-width: 800px;
+    font-weight: 400;
+    letter-spacing: 0.3px;
 }
+
+.hero-section .content .about em {
+    font-style: italic;
+    display: inline-block;
+}
+
+[data-theme="dark"] .about {
+    color: var(--cinder-light);
+}
+
+.about strong {
+    font-weight: 500;
+    color: var(--cinder);
+}
+
+[data-theme="dark"] .about strong {
+    color: var(--white);
+}
+
 .hero-section .content .social-icons svg {
     fill: var(--cinder);
     transition: all .3s;
