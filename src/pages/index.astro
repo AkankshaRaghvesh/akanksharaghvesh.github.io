@@ -1,28 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="apple-touch-icon"  href="assets/favicon/ico.svg">
-    <!-- <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
-    <link rel="manifest" href="assets/favicon/site.webmanifest"> -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
-    <link href="assets/css/aos.css" rel="stylesheet">
-    <link href="assets/css/swiper-bundle.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/kursor.css">
-    <link rel="stylesheet" href="./styles.css">
-    <title>Akanksha Raghvesh</title>
-</head>
-<body>
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Akanksha Raghvesh">
 <header class="header">
     <div class="container">
         <div class="logo" data-aos-delay="200" data-aos="fade-down">
             <!-- <svg viewBox="0 0 114 41">
-                <use xlink:href="assets/img/sprite.svg#logo"></use>
+                <use xlink:href="/assets/img/sprite.svg#logo"></use>
             </svg> -->
         </div>
         <nav class="nav">
@@ -35,7 +20,7 @@
                 <li class="blog" data-aos-delay="450" data-aos="fade-down"><a href="#blog">Volunteering</a></li>
                 <li class="contact mobile-link" data-aos-delay="500" data-aos="fade-down"><a href="#contact">Contact</a></li>
                 <li data-aos-delay="550" data-aos="fade-down" class="more-links">
-                    <svg viewBox="0 0 12 3"><use xlink:href="assets/img/sprite.svg#more-links"></use></svg>
+                    <svg viewBox="0 0 12 3"><use xlink:href="/assets/img/sprite.svg#more-links"></use></svg>
                     <ul class="menu-list">
                         <li class="contact"><a href="#contact">Contact</a></li>
                     </ul>
@@ -45,15 +30,15 @@
         <div class="right-content" data-aos-delay="500" data-aos="fade-down">
             <div class="theme-color-toggle">
                 <svg class="moon" viewBox="0 0 24 24">
-                    <use xlink:href="assets/img/sprite.svg#moon-icon"></use>
+                    <use xlink:href="/assets/img/sprite.svg#moon-icon"></use>
                 </svg>
                 <svg class="sun" viewBox="0 0 24 24">
-                    <use xlink:href="assets/img/sprite.svg#sun-icon"></use>
+                    <use xlink:href="/assets/img/sprite.svg#sun-icon"></use>
                 </svg>
             </div>
-            <!-- <a href="assets/resume.pdf" target="_blank" class="btn btn-outline-light download-resume">Resume</a> -->
+            <!-- <a href="/assets/resume.pdf" target="_blank" class="btn btn-outline-light download-resume">Resume</a> -->
             <svg class="mobile-menu-toggle" viewBox="0 0 24 24">
-                <use xlink:href="assets/img/sprite.svg#menu"></use>
+                <use xlink:href="/assets/img/sprite.svg#menu"></use>
             </svg>
         </div>
     </div>
@@ -66,19 +51,19 @@
                 <h1 class="full-name">Akanksha <span class="primary">Raghvesh.</span></h1>
                 <p class="about">
                     <em>Emerging Cybersecurity Professional: Connecting IT Operations with Foundational Threat Analysis. Building upon a strong IT support background, I am developing expertise in risk analysis and SIEM monitoring. Holding a Master's degree and CompTIA Security+ certification, I am actively engaged in incident response, security compliance (NIST & HIPAA), and contributing to security report generation. I am committed to learning and proactively supporting threat mitigation, strengthening IT defenses, and aligning security practices with organizational needs.</em></p>
-                <!-- <a href="assets/resume.pdf" target="_blank" class="btn btn-outline-light download-resume-mobile">Download Resume</a> -->
+                <!-- <a href="/assets/resume.pdf" target="_blank" class="btn btn-outline-light download-resume-mobile">Download Resume</a> -->
                 <ul class="social-icons">
                     <li>
                         <a href="https://github.com/AkankshaRaghvesh" target="_blank">
                             <svg viewBox="0 0 24 24">
-                                <use xlink:href="assets/img/sprite.svg#github-icon"></use>
+                                <use xlink:href="/assets/img/sprite.svg#github-icon"></use>
                             </svg>
                         </a>
                     </li>
                     <li>
                         <a href="https://www.linkedin.com/in/araghvesh/" target="_blank">
                             <svg viewBox="0 0 24 24">
-                                <use xlink:href="assets/img/sprite.svg#linkedin-icon"></use>
+                                <use xlink:href="/assets/img/sprite.svg#linkedin-icon"></use>
                             </svg>
                         </a>
                     </li>
@@ -87,10 +72,10 @@
             <div class="image" data-aos="fade-up">
                 <div class="cover">
                     <svg class="lines-vector" viewBox="0 0 199 210">
-                        <use xlink:href="assets/img/sprite.svg#lines-vector"></use>
+                        <use xlink:href="/assets/img/sprite.svg#lines-vector"></use>
                     </svg>
                 </div>
-                <img class="avatar" src="assets/img/avatar.png" alt="Akanksha Raghvesh">
+                <img class="avatar" src="/assets/img/avatar.png" alt="Akanksha Raghvesh">
             </div>
         </div>
     </section>
@@ -104,7 +89,7 @@
                 <div class="education-item" data-aos="fade-up" data-aos-delay="100">
                     <div class="education-content">
                         <div class="institution-logo">
-                            <img src="assets/img/IIT.png" alt="IIT Logo" />
+                            <img src="/assets/img/IIT.png" alt="IIT Logo" />
                         </div>
                         <div class="education-details">
                             <h4 class="school">Illinois Institute of Technology</h4>
@@ -116,7 +101,7 @@
                 <div class="education-item" data-aos="fade-up" data-aos-delay="150">
                     <div class="education-content">
                         <div class="institution-logo">
-                            <img src="assets/img/RUAS.jpg" alt="RUAS Logo" />
+                            <img src="/assets/img/RUAS.jpg" alt="RUAS Logo" />
                         </div>
                         <div class="education-details">
                             <h4 class="school">Ramaiah University of Applied Sciences</h4>
@@ -245,7 +230,7 @@
                 <div class="timeline-item" data-aos="fade-up">
                     <div class="timeline-dot"></div>
                     <div class="timeline-content">
-                        <img src="assets/img/KU.png" alt="Keiser University Logo" class="company-logo" />
+                        <img src="/assets/img/KU.png" alt="Keiser University Logo" class="company-logo" />
                         <h4>Cybersecurity / IT Professional</h4>
                         <p class="location">Florida, United States</p>
                         <p class="period">May 2024 - Current</p>
@@ -260,7 +245,7 @@
                 <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
                     <div class="timeline-dot"></div>
                     <div class="timeline-content">
-                        <img src="assets/img/RU.jpg" alt="Rush University Medical Center Logo" class="company-logo" />
+                        <img src="/assets/img/RU.jpg" alt="Rush University Medical Center Logo" class="company-logo" />
                         <h4>Cybersecurity Analyst</h4>
                         <p class="location">Chicago, United States</p>
                         <p class="period">May 2023 - August 2023</p>
@@ -275,7 +260,7 @@
                 <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
                     <div class="timeline-dot"></div>
                     <div class="timeline-content">
-                        <img src="assets/img/METI.jpg" alt="METI JAPAN Logo" class="company-logo" />
+                        <img src="/assets/img/METI.jpg" alt="METI JAPAN Logo" class="company-logo" />
                         <h4>Intern</h4>
                         <p class="location">Nagoya, Japan</p>
                         <p class="period">August 2021 - December 2021</p>
@@ -288,7 +273,7 @@
                 <div class="timeline-item" data-aos="fade-up" data-aos-delay="300">
                     <div class="timeline-dot"></div>
                     <div class="timeline-content">
-                        <img src="assets/img/CPS.png" alt="Chicago Public Schools Logo" class="company-logo" />
+                        <img src="/assets/img/CPS.png" alt="Chicago Public Schools Logo" class="company-logo" />
                         <h4>Exam Proctor</h4>
                         <p class="location">Chicago, United States</p>
                         <p class="period">Oct 2022 - May 2023 </p>
@@ -311,7 +296,7 @@
                 <div class="certification-card" data-aos="fade-up" data-aos-delay="100">
                     <div class="certification-content">
                         <div class="cert-logo">
-                            <img src="assets/img/Comp.png" alt="CompTIA Logo" loading="lazy" />
+                            <img src="/assets/img/Comp.png" alt="CompTIA Logo" loading="lazy" />
                             <div class="verified-badge">
                                 <svg viewBox="0 0 24 24" class="verified-icon">
                                     <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
@@ -330,7 +315,7 @@
                 <div class="certification-card" data-aos="fade-up" data-aos-delay="125">
                     <div class="certification-content">
                         <div class="cert-logo">
-                            <img src="assets/img/ITS.png" alt="Pearson Logo" loading="lazy" />
+                            <img src="/assets/img/ITS.png" alt="Pearson Logo" loading="lazy" />
                             <div class="verified-badge">
                                 <svg viewBox="0 0 24 24" class="verified-icon">
                                     <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
@@ -348,7 +333,7 @@
                 <div class="certification-card" data-aos="fade-up" data-aos-delay="150">
                     <div class="certification-content">
                         <div class="cert-logo">
-                            <img src="assets/img/cisco.png" alt="Cisco Logo" loading="lazy" />
+                            <img src="/assets/img/cisco.png" alt="Cisco Logo" loading="lazy" />
                             <div class="verified-badge">
                                 <svg viewBox="0 0 24 24" class="verified-icon">
                                     <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
@@ -366,7 +351,7 @@
                 <div class="certification-card" data-aos="fade-up" data-aos-delay="200">
                     <div class="certification-content">
                         <div class="cert-logo">
-                            <img src="assets/img/USDH.png" alt="ICS Logo" />
+                            <img src="/assets/img/USDH.png" alt="ICS Logo" />
                             <div class="verified-badge">
                                 <svg viewBox="0 0 24 24" class="verified-icon">
                                     <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
@@ -393,12 +378,12 @@
                 <div class="slider-navigation">
                     <div class="prev">
                         <svg viewBox="0 0 24 24">
-                            <use xlink:href="assets/img/sprite.svg#arrow-left"></use>
+                            <use xlink:href="/assets/img/sprite.svg#arrow-left"></use>
                         </svg>
                     </div>
                     <div class="next">
                         <svg viewBox="0 0 24 24">
-                            <use xlink:href="assets/img/sprite.svg#arrow-right"></use>
+                            <use xlink:href="/assets/img/sprite.svg#arrow-right"></use>
                         </svg>
                     </div>
                 </div>
@@ -409,7 +394,7 @@
                         <div class="swiper-slide" data-aos="fade-up" data-aos-delay="200">
                             <article class="portfolio-item">
                                 <figure>
-                                    <img src="assets/img/deid.png">
+                                    <img src="/assets/img/deid.png">
                                 </figure>
                                 <div class="detail">
                                     <h4 class="title">DeID Anonymizer</h4>
@@ -419,7 +404,7 @@
                                         <span class="tag">PySpark</span>
                                         <a class="link" href="https://github.com/AkankshaRaghvesh/DeID-Anonymizer" target="_blank">
                                             <svg viewBox="0 0 24 24">
-                                                <use xlink:href="assets/img/sprite.svg#link"></use>
+                                                <use xlink:href="/assets/img/sprite.svg#link"></use>
                                             </svg>
                                         </a>
                                     </div>
@@ -429,7 +414,7 @@
                         <div class="swiper-slide" data-aos="fade-up" data-aos-delay="300">
                             <article class="portfolio-item">
                                 <figure>
-                                    <img src="assets/img/cambot.png">
+                                    <img src="/assets/img/cambot.png">
                                 </figure>
                                 <div class="detail">
                                     <h4 class="title">CamBot Line Follower</h4>
@@ -438,7 +423,7 @@
                                         <span class="tag">Arduino</span>
                                         <a class="link" href="https://www.linkedin.com/in/araghvesh/details/projects/" target="_blank">
                                             <svg viewBox="0 0 24 24">
-                                                <use xlink:href="assets/img/sprite.svg#link"></use>
+                                                <use xlink:href="/assets/img/sprite.svg#link"></use>
                                             </svg>
                                         </a>
                                     </div>
@@ -448,7 +433,7 @@
                         <div class="swiper-slide" data-aos="fade-up" data-aos-delay="400">
                             <article class="portfolio-item">
                                 <figure>
-                                    <img src="assets/img/lc.png">
+                                    <img src="/assets/img/lc.png">
                                 </figure>
                                 <div class="detail">
                                     <h4 class="title">Lets_Check (OSINT Tool) </h4>
@@ -456,7 +441,7 @@
                                         <span class="tag">Python</span>
                                         <a class="link" href="https://github.com/Akanksharaghvesh/Lets_Check" target="_blank">
                                             <svg viewBox="0 0 24 24">
-                                                <use xlink:href="assets/img/sprite.svg#link"></use>
+                                                <use xlink:href="/assets/img/sprite.svg#link"></use>
                                             </svg>
                                         </a>
                                     </div>
@@ -466,7 +451,7 @@
                         <div class="swiper-slide" data-aos="fade-up" data-aos-delay="200">
                             <article class="portfolio-item">
                                 <figure>
-                                    <img src="assets/img/phms.png">
+                                    <img src="/assets/img/phms.png">
                                 </figure>
                                 <div class="detail">
                                     <h4 class="title">Patient Health Monitoring System</h4>
@@ -475,7 +460,7 @@
                                         <span class="tag">ESP8266 </span>
                                         <a class="link" href="https://www.linkedin.com/in/araghvesh/details/projects/" target="_blank">
                                             <svg viewBox="0 0 24 24">
-                                                <use xlink:href="assets/img/sprite.svg#link"></use>
+                                                <use xlink:href="/assets/img/sprite.svg#link"></use>
                                             </svg>
                                         </a>
                                     </div>
@@ -498,7 +483,7 @@
             <div class="post-item-wrapper">
                 <article class="post-item" data-aos="fade-up" data-aos-delay="50" >
                     <figure>
-                        <img src="assets/img/wicys.png" alt="WiCyS">
+                        <img src="/assets/img/wicys.png" alt="WiCyS">
                     </figure>
                     <div class="content">
                         <h3 class="title">Women in CyberSecurity </h3>
@@ -513,7 +498,7 @@
                 </article>
                 <article class="post-item" data-aos="fade-up" data-aos-delay="100" >
                     <figure>
-                        <img src="assets/img/drake.png" alt="Drake">
+                        <img src="/assets/img/drake.png" alt="Drake">
                     </figure>
                     <div class="content">
                         <h3 class="title">Drake Elementary School</h3>
@@ -526,7 +511,7 @@
                 </article>
                 <article class="post-item" data-aos="fade-up" data-aos-delay="150" >
                     <figure>
-                        <img src="assets/img/adore.png" alt="Adore">
+                        <img src="/assets/img/adore.png" alt="Adore">
                     </figure>
                     <div class="content">
                         <h3 class="title">Adore India</h3>
@@ -547,19 +532,19 @@
             </div>
             <div class="testimonial-item-wrapper">
                 <div class="testimonial-item" data-aos="fade-up" data-aos-delay="50">
-                    <img class="avatar" src="assets/img/testimonial-avatar-1.jpg" alt="Amelia Miller">
+                    <img class="avatar" src="/assets/img/testimonial-avatar-1.jpg" alt="Amelia Miller">
                     <p class="text">We were very pleased to hear how you resolved our website's user interface issues and challenges.</p>
                     <p class="name">Amelia Miller</p>
                     <p class="tag job-title">Designer</p>
                 </div>
                 <div class="testimonial-item" data-aos="fade-up" data-aos-delay="100">
-                    <img class="avatar" src="assets/img/testimonial-avatar-2.jpg" alt="Amelia Miller">
+                    <img class="avatar" src="/assets/img/testimonial-avatar-2.jpg" alt="Amelia Miller">
                     <p class="text">I'm glad I decided to work with you. The project was delivered on time with all the requirements.</p>
                     <p class="name">James Delaney</p>
                     <p class="tag job-title">Developer</p>
                 </div>
                 <div class="testimonial-item" data-aos="fade-up" data-aos-delay="150">
-                    <img class="avatar" src="assets/img/testimonial-avatar-3.jpg" alt="Amelia Miller">
+                    <img class="avatar" src="/assets/img/testimonial-avatar-3.jpg" alt="Amelia Miller">
                     <p class="text">The management of our projects was always faced with difficulties, but you handled these well.</p>
                     <p class="name">Isabella Bennett</p>
                     <p class="tag job-title">Manager</p>
@@ -588,27 +573,18 @@
         <li>
             <a href="https://github.com/AkankshaRaghvesh" target="_blank">
                 <svg viewBox="0 0 24 24">
-                    <use xlink:href="assets/img/sprite.svg#github-icon"></use>
+                    <use xlink:href="/assets/img/sprite.svg#github-icon"></use>
                 </svg>
             </a>
         </li>
         <li>
             <a href="https://www.linkedin.com/in/araghvesh/" target="_blank">
                 <svg viewBox="0 0 24 24">
-                    <use xlink:href="assets/img/sprite.svg#linkedin-icon"></use>
+                    <use xlink:href="/assets/img/sprite.svg#linkedin-icon"></use>
                 </svg>
             </a>
         </li>
     </ul>
     <p class="copyright" data-aos="fade-up" data-aos-delay="100">© <span class="year">2023</span>  -  Akanksha<span class="bold"> Raghvesh</span></p>
 </footer>
-<!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "ce1c33baf2194ab3b3f49d8c9af64bf4"}'></script><!-- End Cloudflare Web Analytics -->
-</body>
-<script src="assets/js/aos.js"></script>
-<script src="assets/js/swiper-bundle.min.js"></script>
-<script src="assets/js/kursor.js"></script>
-<script src="assets/js/svg4everybody.min.js"></script>
-<script src="assets/js/css-vars-ponyfill.min.js"></script>
-<script src="assets/js/unfetch.js"></script>
-<script src="./script.js"></script>
-</html>
+</Layout>
