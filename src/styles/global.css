@@ -1771,6 +1771,18 @@ input[type='email']::placeholder,
     font-family: 'Inter', monospace;
 }
 
+.issue-date {
+    font-size: 13px;
+    color: var(--cinder-light);
+    background: var(--purple-light-2);
+    padding: 6px 12px;
+    border-radius: 4px;
+    display: inline-block;
+    margin-bottom: 16px;
+    font-family: 'Inter', monospace;
+}
+
+
 .cert-link {
     display: inline-flex;
     align-items: center;
