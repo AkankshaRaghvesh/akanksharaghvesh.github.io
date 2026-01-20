@@ -1,14 +1,5 @@
 document.addEventListener("DOMContentLoaded", function (event) {
-    // Dark theme
-    var prevActiveTheme = localStorage.getItem("theme-color");
-    document.documentElement.setAttribute("data-theme", prevActiveTheme ? prevActiveTheme : "light");
-    var themeToggle = document.getElementsByClassName('theme-color-toggle')[0];
-    themeToggle.onclick = function () {
-        var currentTheme = document.documentElement.getAttribute("data-theme");
-        var switchToTheme = currentTheme === "dark" ? "light" : "dark";
-        localStorage.setItem("theme-color", switchToTheme)
-        document.documentElement.setAttribute("data-theme", switchToTheme);
-    }
+
     // AOS
     AOS.init({
         once: true,
@@ -17,10 +8,10 @@ document.addEventListener("DOMContentLoaded", function (event) {
         easing: 'cubic-bezier(0.42, 0, 0.12, 1.28)'
     });
     // kursor
-     new kursor({
-         type: 4,
-         color: '#7E74F1'
-     });
+    new kursor({
+        type: 4,
+        color: '#7E74F1'
+    });
     // SVG Sprite Support
     svg4everybody();
     // CSS Var support
@@ -45,9 +36,16 @@ document.addEventListener("DOMContentLoaded", function (event) {
     document.querySelectorAll('.header .nav .nav-links a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
             e.preventDefault();
-            document.querySelector(this.getAttribute('href')).scrollIntoView({
-                behavior: 'smooth',
-                block: "start"
+            e.preventDefault();
+            const targetId = this.getAttribute('href');
+            const targetelement = document.querySelector(targetId);
+            const headerOffset = 100;
+            const elementPosition = targetelement.getBoundingClientRect().top;
+            const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+            window.scrollTo({
+                top: offsetPosition,
+                behavior: "smooth"
             });
         });
     });
@@ -72,7 +70,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
     // Back to top
     var trigger = document.getElementsByClassName('logo')[0];
     trigger.onclick = function () {
-        window.scrollTo({top: 0, behavior: 'smooth'});
+        window.scrollTo({ top: 0, behavior: 'smooth' });
     }
     // Mobile menu
     var mobileMenuToggle = document.getElementsByClassName('mobile-menu-toggle')[0];
@@ -110,21 +108,21 @@ document.addEventListener("DOMContentLoaded", function (event) {
         if (e.target.tagName === 'LI') {
             // Handle selector position for desktop
             window.innerWidth > 992 ? document.querySelector(".experience-section .selector").style.top = e.target.offsetTop + 'px' : null;
-            
+
             // Remove active class from previous active elements
             document.querySelector(".experience-section .companies-list li.active").classList.remove('active');
             document.querySelectorAll(".company-logo.visible").forEach(logo => logo.classList.remove('visible'));
-            
+
             // Add active class to clicked element
             e.target.classList.add('active');
-            
+
             var targetTab = e.target.getAttribute('data-tab');
             if (targetTab) {
                 // Show content
                 document.querySelector(".experience-section .content.active").classList.remove('active');
                 const newActiveContent = document.getElementById(targetTab);
                 newActiveContent.classList.add('active');
-                
+
                 // Show logo with animation
                 const logo = newActiveContent.querySelector('.company-logo');
                 if (logo) {
@@ -138,7 +136,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
     // Initialize first logo as visible
     document.querySelector(".content.active .company-logo")?.classList.add('visible');
-    
+
     // Skill
     var bars = document.querySelectorAll(".progress-bar .main-bar .fill");
     window.addEventListener('scroll', function () {
@@ -236,7 +234,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
     // Timeline animations
     const timelineItems = document.querySelectorAll('.timeline-item');
-    
+
     const observerOptions = {
         root: null,
         rootMargin: '0px',
